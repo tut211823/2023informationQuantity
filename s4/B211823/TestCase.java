@@ -44,13 +44,13 @@ public class TestCase {
 	    myObject.setTarget("H".getBytes());
 	    freq = myObject.frequency();
 	    assert freq == 4: "Hi Ho Hi Ho, H: " + freq;
-	　　// Additional test case for FrequencerInterface
-	　　// Test case 7: Target length is greater than remaining space length
-　　　　　　myObject = new Frequencer();
-	　　myObject.setSpace("Hi Ho Hi Ho".getBytes());
-	　　myObject.setTarget("Hi Ho Hi Ho".getBytes());
-	　　freq = myObject.frequency();
-	　　assert freq == 0 : "Target length is greater than remaining space length: " + freq;
+		// Additional test case for FrequencerInterface
+		// Test case 7: Target length is greater than remaining space length
+		myObject = new Frequencer();
+		myObject.setSpace("Hi Ho Hi Ho".getBytes());
+		myObject.setTarget("Hi Ho Hi Ho".getBytes());
+		freq = myObject.frequency();
+		assert freq == 0 : "Target length is greater than remaining space length: " + freq;
 
 
 
